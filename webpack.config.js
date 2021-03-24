@@ -4,7 +4,7 @@ module.exports = {
   context: __dirname,
   entry: './src/index.js',
   output: {
-    path: path.resolve( __dirname, 'public/js' ),
+    path: path.resolve( __dirname, 'build' ),
     filename: 'main.js',
     publicPath: '/',
   },
