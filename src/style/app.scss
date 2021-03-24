@@ -1,0 +1,62 @@
+body {
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.paper-container {
+    padding: 12px;
+    .tournaments-list {
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        .tournament-container {
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                background-color: rgba(231, 231, 231, 0.5);
+            }
+            .delete-icon {
+                position: absolute;
+            }
+        }
+    }
+    .tournaments-panel {
+        min-height: 500px;
+        .title {
+            color: #4b4b4b;
+            font-size: 18px;
+            letter-spacing: 0.34px;
+            font-weight: 700;
+            padding: 5px 10px;
+            border-bottom: 1px solid #b6b6b6;
+            user-select: none;
+        }
+        .empty-text {
+            text-align: center;
+            opacity: 0.3;
+            user-select: none;
+        }
+        .tournaments-container {
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            .tournament-container {
+                position: relative;
+                .remove-icon {
+                    position: absolute;
+                    right: 0;
+                    color: rgba(128, 128, 128, 0.46);
+                    top: 0;
+                    &:hover {
+                        cursor: pointer;
+
+                        color: rgba(128, 128, 128, 0.78);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+div.avatar {
+    height: 53px;
+    width: 53px;
+}
