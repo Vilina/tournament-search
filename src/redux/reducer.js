@@ -48,7 +48,6 @@ export default function appReducer(state = initialState, action) {
         ...state,
         pending: false,
         tournaments: action.payload,
-        error: {}
       };
     case FETCH_TOURNAMENTS_ERROR:
       return {
@@ -127,8 +126,9 @@ export const deleteTournamentMdl = (tournamentId) => (dispatch, getState) => {
 };
 
 export const resetSearch = () => (dispatch, getState) => {
+  dispatch(fetchTournamentsPending());
+  dispatch(fetchTournamentsError({}));
   dispatch(fetchTournamentsSuccess([]));
-  dispatch(setSearchField(''))
 };
 
 export const getUserSavedTournaments = () => async (dispatch, getState) => {

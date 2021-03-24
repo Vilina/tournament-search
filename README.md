@@ -2,19 +2,19 @@
 #[Demo](https://vilina.github.io/tournament-search/)
 
 # Dependencies
-Node.js (v14)
+Node.js (v14)\
 Npm (~v7)
 
 # Installation
-1. Clone the repo git clone `https://github.com/Vilina/tournament-search.git tournament-search && cd tournament-search`.
+1. Clone the repo git clone `https://github.com/Vilina/tournament-search.git tournament-search && cd tournament-search`.\
 2. Install the dependencies in the root directory npm install 
 
 # Running locally
-Start the dev server with `npm run dev` (for development).
+Start the dev server with `npm run dev` (for development).\
 Point your browser to `http://localhost:8080/`.
 
 # Deployment
-For production build use command `npm run predeploy`
+For production build use command `npm run predeploy`\
 For deploying to gh-pages run `npm run deploy`
 
 

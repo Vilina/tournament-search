@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import TextField from "@material-ui/core/TextField/TextField";
 import { Box} from "@material-ui/core";
 import { FormControl, CircularProgress } from "@material-ui/core";
-import { fetchTournamentsError, setSearchField } from '../redux/actions'
+import { fetchTournamentsError, setSearchField, fetchTournamentsPending } from '../redux/actions'
 import { fetchTournaments, resetSearch } from '../redux/reducer'
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -15,8 +15,8 @@ const Search = () => {
   const pending = useSelector((state) => state.pending);
 
   useEffect(() => {
-    dispatch(resetSearch());
     if (isMounted.current && search.length) {
+      dispatch(resetSearch());
       const timer = setTimeout(() => {
         if (search.length >= 2) {
           dispatch(setSearchField(search));

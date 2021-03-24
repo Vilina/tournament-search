@@ -43,7 +43,7 @@ const Tournament = ( props ) => {
             <Avatar alt={props.tournament.title} src={imgURL} variant="square" className='avatar' />
           </Grid>
           <Grid container item xs={10} alignItems="center">
-            <Typography variant="subtitle2" gutterBottom noWrap>
+            <Typography variant="subtitle2" gutterBottom noWrap className="tournament-title">
               {props.tournament.title}
             </Typography>
             <Typography variant="subtitle2" gutterBottom fontWeight="fontWeightRegular" color="textSecondary" noWrap>

@@ -17,7 +17,8 @@ export function setSearchField(searchField) {
 
 export function fetchTournamentsPending() {
   return {
-    type: FETCH_TOURNAMENTS_PENDING
+    type: FETCH_TOURNAMENTS_PENDING,
+    error: {}
   }
 }
 
