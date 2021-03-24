@@ -131,7 +131,7 @@ export const resetSearch = () => (dispatch, getState) => {
   dispatch(setSearchField(''))
 };
 
-export const getUserSavedTournaments = () => async (dispatch, getState) => {console.log('getUserSavedTournaments');
+export const getUserSavedTournaments = () => async (dispatch, getState) => {
   let savedUserTournaments = JSON.parse(localStorage.getItem('tournaments')) || [];
   dispatch(setSavedTournaments(savedUserTournaments));
 };

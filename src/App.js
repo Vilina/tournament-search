@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, Component, useRef} from 'react';
+import React from 'react';
 import SavedTournamentsPanel from './components/tournamentsPanel'
 import TournamentsList from './components/tournamentsList'
 import Search from './components/search'
